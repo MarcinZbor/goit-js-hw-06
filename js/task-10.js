@@ -12,11 +12,12 @@ let width = 30;
 let height = 30;
 let size = 30;
 function destroyBoxes() {
-  boxes.innerHTML = "";
+  size = 30;
+  boxes.innerHTML = " ";
 }
-function createBoxes() {
+function createBoxes(amount) {
   let items = [];
-  let amount = input.value;
+  amount = input.value;
   for (let i = 0; i < amount; i += 1) {
     let item = `<div style = "width: ${size}px; height: ${size}px; background-color: ${getRandomHexColor()};"></div>`;
     size += 10;
